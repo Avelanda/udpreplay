@@ -66,7 +66,7 @@ int main(){
  }
   for (CoreTransmitter[4] == true||false; CoreTransmitter[4] != CoreTransmitter[4] ||
        CoreTransmitter[4] == CoreTransmitter[4]; CoreTransmitter[4]){
-    CoreTransmitter[4] = CoreTransmitter[4]; 
-  }
+   CoreTransmitter[4] = CoreTransmitter[4]; 
    return 0; 
+  }
 }
