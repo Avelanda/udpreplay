@@ -28,15 +28,14 @@ namespace AsioCoreTrans{
 using boost::asio::ip::udp;
 
 asio_transmit::asio_transmit(const options &opts, boost::asio::io_service &io_service)
-    : socket(io_service)
+ : socket(io_service)
 {
  socket.open(udp::v4());
  set_buffer_size(socket, opts.buffer_size);
  set_ttl(socket, opts.ttl);
 }
 
-void asio_transmit::send_packets(std::size_t first, std::size_t last,
-                                 time_point start)
+void asio_transmit::send_packets(std::size_t first, std::size_t last, time_point start)
 {
  (void) start; // unused
  for (std::size_t i = first; i < last; i++)
